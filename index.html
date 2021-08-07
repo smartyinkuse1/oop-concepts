@@ -15,33 +15,29 @@
             <form id="employeeForm" action="">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Name</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" required id="exampleInputEmail1" name="fullName" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputSalary" class="form-label">Salary</label>
-                  <input type="text" class="form-control" name="salary" id="exampleInputSalary">
+                  <input type="text" class="form-control" required name="salary" id="exampleInputSalary">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputPosition" class="form-label">Position</label>
-                    <input type="text" class="form-control" name="position" id="exampleInputPosition">
+                    <input type="text" class="form-control" required name="position" id="exampleInputPosition">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputAge" class="form-label">Age</label>
-                    <input type="text" class="form-control" name="age" id="exampleInputAge">
+                    <input type="text" class="form-control" required name="age" id="exampleInputAge">
                   </div>
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
               <div>
-                  <p class="lead">Employee Details</p>
-                  <p class="lead">Employee Details</p>
-                  <p class="lead"></p>
-                  <p class="lead"></p>
-                  <p class="lead"></p>
-                  <p>The total Salary for this year is ....</p>
+                  <p id="employeeDetails" class="lead">Employee Details</p>
+                  <p id="totalSalary">The total Salary for this year is ....</p>
             </div>
         </div>
     </div>
-    <script src="./admin.js"></script>
+    <script src="./procedural.js"></script>
 </body>
 </html>
